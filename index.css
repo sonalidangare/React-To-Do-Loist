@@ -1,0 +1,163 @@
+   
+  form {
+    margin-bottom: 20px;
+    text-align: center;
+    
+  }
+  
+  input, textarea {
+    display: block;
+    width: 50%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-left: 25%;
+  }
+  
+  button {
+    padding: 8px 12px;
+    margin-right: 10px;
+    /* margin-left: 50%; */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+    
+  h1{
+    text-align: center;
+  }
+
+  .todoform {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .todoform input[type="text"],
+  .todoform textarea,
+  .todoform input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .todoform input[type="text"]:focus,
+  .todoform textarea:focus,
+  .todoform input[type="date"]:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
+  
+  .todoform textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .todoform button {
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .todoform button:hover {
+    background-color: #0056b3;
+  }
+  
+  .todoform button:active {
+    background-color: #004085;
+  }
+  
+  .todoform input::placeholder,
+  .todoform textarea::placeholder {
+    color: #888;
+  }
+  
+  @media (max-width: 500px) {
+    .todoform {
+      max-width: 90%;
+    }
+  }
+  
+  /* Save/Cancel buttons in edit mode */
+.todo-item .edit-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.todo-item .edit-buttons button {
+  background-color: #28a745;
+}
+
+.todo-item .edit-buttons button:hover {
+  background-color: #218838;
+}
+
+.todo-item .edit-buttons .cancel-btn {
+  background-color: #dc3545;
+}
+
+.todo-item .edit-buttons .cancel-btn:hover {
+  background-color: #c82333;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .todo-item {
+    padding: 15px;
+  }
+
+  .todo-item button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .todo-item strong {
+    font-size: 16px;
+  }
+
+  .todo-item span {
+    font-size: 12px;
+  }
+
+  .todo-item input[type="text"],
+  .todo-item input[type="date"] {
+    font-size: 14px;
+  }
+}
